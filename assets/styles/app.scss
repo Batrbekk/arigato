@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+html {
+  background-color: #fffcef;
+}
+
+img {
+  height: revert-layer;
+}
+
+
+.inset-box {
+  box-shadow: inset 10px 0 20px 0 rgba(255,252,239,0.4);
+}
+
+@keyframes infiniteScroll {
+  from {transform: translateX(0)}
+  to {transform: translateX(-50%)}
+}
+
+.loop-container {
+  width: 100%;
+  overflow-x: hidden;
+
+}
+.horizontal-scrolling-items {
+  display: flex;
+  font-size: 40px;
+  width: 2600px;
+  animation-name: infiniteScroll;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.horizontal-scrolling-items__item {
+  white-space: nowrap;
+}
