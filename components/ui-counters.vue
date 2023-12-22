@@ -1,5 +1,5 @@
 <template>
-  <div class="flex border border-customBlack w-full items-center">
+  <div class="flex border border-customBlack w-full items-center h-full">
     <atom-counter
       v-for="item in counters"
       :key="item.label"

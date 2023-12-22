@@ -1,9 +1,9 @@
 <template>
-  <div class="py-5 flex flex-col items-center">
-    <p class="text-customBlack text-lg">
+  <div class="py-5 flex flex-col justify-center items-center h-28 lg:h-32">
+    <p class="text-customBlack lg:text-lg text-center">
       {{ label }}
     </p>
-    <p class="font-bold text-6xl">
+    <p class="font-bold text-2xl md:text-3xl lg:text-6xl">
       {{ counter }} <span class="text-redJapan">{{ unit }}</span>
     </p>
   </div>
