@@ -3,6 +3,7 @@
     <!--    <ui-headline />-->
     <ui-counters />
     <about-japan />
+    <ui-services />
   </MainLayout>
 </template>
 
@@ -10,4 +11,5 @@
 import MainLayout from "~/layout/mainLayout.vue";
 import UiCounters from "~/components/ui-counters.vue";
 import AboutJapan from "~/components/about-japan.vue";
+import UiServices from "~/components/ui-services.vue";
 </script>

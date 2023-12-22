@@ -2,7 +2,7 @@
   <div class="h-full flex gap-x-4">
     <div class="bg-milk w-full h-full flex flex-col justify-center relative cursor-pointer">
       <div class="flex flex-col absolute top-8 left-8">
-        <p class="uppercase text-redJapan font-bold text-base">
+        <p class="uppercase text-redJapan font-semibold text-base">
           Токио
         </p>
         <p class="text-lightBlack font-bold text-2xl">

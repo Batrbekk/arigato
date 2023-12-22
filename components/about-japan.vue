@@ -1,5 +1,5 @@
 <template>
-  <div class="flex lg:flex-row flex-col items-center border border-customBlack lg:h-[650px] mb-10">
+  <div class="flex lg:flex-row flex-col items-center border border-customBlack lg:h-[650px]">
     <div class="lg:w-1/2 w-full lg:border-r border-b border-customBlack flex flex-col justify-center items-center h-full gap-8 py-8 lg:py-0">
       <NuxtImg
         src="/images/about_japan.svg"
@@ -38,22 +38,22 @@ const desc = [
   {
     id: 1,
     title: 'Большой опыт путешествий',
-    label: 'Our team has extensive experience in creating e-commerce websites that are easy to navigate and optimized for sales.'
+    label: 'Наша цель – не просто организовать тур, а создать для вас яркие воспоминания на всю жизнь.'
   },
   {
     id: 2,
     title: 'Уникальность маршрута',
-    label: 'Whether it\'s a web-based CRM or an inventory management system, Our team can develop custom web applications tailored to your specific needs.'
+    label: 'От классических достопримечательностей до скрытых жемчужин Японии – мы покажем вам все.'
   },
   {
     id: 3,
-    title: 'Сильное окружение',
-    label: 'With a focus on responsive design, Our team ensures that your website looks and functions flawlessly across all devices'
+    title: 'Высококачественное обслуживание',
+    label: 'Наши клиенты получают поддержку 24/7 и услуги от опытных гидов.'
   },
   {
     id: 4,
-    title: 'Эстетика и комфорт',
-    label: 'We can develop customized content management systems (CMS) that make it easy for you to manage your website content.'
+    title: 'Глубокое знание Японии',
+    label: 'Мы не просто организовываем туры, мы делимся уникальными знаниями и опытом, чтобы каждый момент вашего путешествия был особенным.'
   }
 ]
 </script>
