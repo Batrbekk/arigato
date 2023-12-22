@@ -14,7 +14,11 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxt/image',
     'nuxt-icon',
+    'vue3-carousel-nuxt'
   ],
+  carousel: {
+    prefix: 'MyPrefix'
+  },
   image: {
     inject: true,
   },

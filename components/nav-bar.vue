@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container mx-auto border border-customBlack h-20 md:h-16 relative"
+    class="container mx-auto border border-customBlack md:h-20 h-16 relative"
     :class="isOpen && '!h-80'"
   >
     <div

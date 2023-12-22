@@ -4,6 +4,7 @@
     <ui-counters />
     <about-japan />
     <ui-services />
+    <ui-reviews />
   </MainLayout>
 </template>
 

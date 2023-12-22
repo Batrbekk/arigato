@@ -3,6 +3,7 @@
 /// <reference types="@nuxtjs/i18n" />
 /// <reference types="@nuxt/image" />
 /// <reference types="nuxt-icon" />
+/// <reference types="vue3-carousel-nuxt" />
 /// <reference types="@nuxt/devtools" />
 /// <reference types="@nuxt/telemetry" />
 /// <reference types="nuxt" />
