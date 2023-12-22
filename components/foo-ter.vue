@@ -1,21 +1,20 @@
 <template>
   <div class="flex flex-col">
     <infinite-carousel />
-    <div class="bg-customBlack p-24 lg:px-12 lg:py-16 md:!p-4">
-      <div class="flex items-center justify-between lg:flex-col lg:gap-y-6">
+    <div class="bg-customBlack p-4 xl:p-24 md:px-12 md:py-16">
+      <div class="flex lg:items-center justify-between flex-col lg:flex-row gap-y-6">
         <div class="max-w-3xl">
-          <h3 class="text-lightYellow font-bold font-mono text-4xl lg:text-center md:text-2xl">
+          <h3 class="text-lightYellow font-bold font-mono lg:text-4xl text-center lg:text-left text-2xl">
             Будь в курсе с наших новостей. Оставайся в центре происходящего вместе с нами!
           </h3>
         </div>
-        <div class="flex gap-x-6 md:flex-col md:w-full md:gap-y-2">
+        <div class="flex gap-x-6 flex-col w-full gap-y-2 lg:flex-row lg:max-w-fit">
           <ui-input
             label=""
+            wrapper-class=""
             :model-value="email"
             placeholder="Введите почту"
             type="text"
-            classes="md:!w-full"
-            wrapper-class="md:!max-w-full"
             @update:model-value="handleInputValueChange"
           />
           <button class="bg-redJapan text-lightYellow font-mono text-lg p-4 md:w-full">
@@ -23,20 +22,20 @@
           </button>
         </div>
       </div>
-      <div class="mt-24 flex items-start justify-between md:flex-col md:mt-8 md:items-center">
+      <div class="lg:mt-24 flex justify-between flex-col lg:flex-row mt-8 items-center">
         <NuxtImg src="/images/whiteLogo.svg" />
-        <div class="w-1/2 flex flex-wrap gap-y-4 md:w-full md:p-4 md:mt-4">
+        <div class="lg:w-1/2 flex flex-wrap gap-y-4 w-full p-4 mt-4 lg:p-0 lg:mt-0">
           <NuxtLink
             v-for="link in links"
             :key="link.to"
             :to="link.to"
-            class="text-lightYellow text-lg w-1/2 md:w-full md:text-center"
+            class="text-lightYellow text-lg lg:w-1/2 w-full text-center lg:text-left"
           >
             {{ link.label }}
           </NuxtLink>
         </div>
       </div>
-      <div class="mt-20 md:mt-8 flex items-center justify-between md:justify-center md:flex-col gap-4">
+      <div class="lg:mt-20 mt-8 flex items-center lg:justify-between justify-center flex-col md:flex-row gap-4">
         <p class="text-lightYellow text-xs font-mono">
           © Made by Batyrbek -  Powered by Nuxt3/tailwind/i18-n
         </p>

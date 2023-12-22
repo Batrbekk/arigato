@@ -1,12 +1,12 @@
 <template>
   <div
-    class="max-w-xs"
+    class="lg:max-w-xs w-full"
     :class="wrapperClass"
   >
     <label for="input">{{ label }}</label>
     <input
       :class="classes"
-      class="placeholder-lightGray text-customBlack pl-4 py-4 font-mono text-lg w-64"
+      class="placeholder-lightGray text-customBlack pl-4 py-4 font-mono text-lg lg:w-64 w-full"
       :value="modelValue"
       :type="type"
       :placeholder="placeholder"
