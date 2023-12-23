@@ -17,7 +17,10 @@
             type="text"
             @update:model-value="handleInputValueChange"
           />
-          <button class="bg-redJapan text-lightYellow font-mono text-lg p-4 md:w-full">
+          <button
+            class="bg-redJapan text-lightYellow font-mono text-lg p-4 md:w-full"
+            @click="sendMail"
+          >
             Подписаться
           </button>
         </div>
@@ -64,6 +67,7 @@
 
 <script lang="ts" setup>
 import InfiniteCarousel from "~/components/infinite-carousel.vue";
+import {$fetch} from "ofetch";
 
 const links = [
   {
@@ -91,5 +95,32 @@ const email = useState(() => '');
 
 function handleInputValueChange (newValue: string) {
   email.value = newValue;
+}
+
+async function sendMail () {
+  try {
+    const res = await $fetch('https://forms.amocrm.ru/queue/add', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: {
+        'fields[781729_1][438977]': email.value,
+        form_id: 1261922,
+        hash: 'e2918e34ddba76569643a95763d35848',
+        user_origin: {
+          datetime: `${new Date()}`,
+          referer: 'https://arigatotravel.amocrm.ru/'
+        },
+        form_request_id: 'XIQgQ4Slwc',
+        gso_session_uid: '353f1284-3a89-4d58-bb1a-9f04a0dedee4'
+      }
+    });
+    if (res.ok) {
+      console.log('asd');
+    }
+  } catch (err) {
+    console.error(err);
+  }
 }
 </script>
