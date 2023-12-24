@@ -1,7 +1,7 @@
 <template>
   <main-layout>
     <div
-      v-if="param === 'corp'"
+      v-if="param === 'group'"
       class="flex lg:flex-row flex-col-reverse items-center w-full border-x border-b border-customBlack"
     >
       <div class="w-full lg:w-1/2 flex flex-col gap-y-4 p-10">
@@ -69,7 +69,7 @@
       </div>
     </div>
     <div
-      v-if="param === 'corp'"
+      v-if="param === 'group'"
       class="flex lg:flex-row flex-col items-center w-full border-x border-b border-customBlack"
     >
       <div class="w-full lg:w-1/2 lg:border-r border-t lg:border-t-0 border-customBlack">
@@ -97,7 +97,7 @@
       </div>
     </div>
     <div
-      v-if="param === 'corp'"
+      v-if="param === 'group'"
       class="flex lg:flex-row flex-col items-start w-full border-x border-b border-customBlack"
     >
       <div class="w-full lg:w-1/2 border-customBlack">
