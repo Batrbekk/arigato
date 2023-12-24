@@ -50,42 +50,42 @@ import { Carousel, Slide } from 'vue3-carousel'
 const reviews = [
   {
     id: 0,
-    src: '/images/avatar.svg',
+    src: '/images/avatar.webp',
     name: 'Батырбек',
     nick: 'Любитель пляжей',
     review: '"Booking our beach honeymoon through BookEase was a breeze. The real-time availability feature made planning stress-free, and we found the perfect romantic getaway at SunsetBeach. We can\'t thank BookEase enough for making our dream honeymoon a reality."'
   },
   {
     id: 1,
-    src: '/images/avatar.svg',
+    src: '/images/avatar.webp',
     name: 'Сара',
     nick: 'Сольный путешественник',
     review: '"As a solo traveler, I value convenience and safety. BookEase delivered on both fronts, and I had an amazing experience at CoralBay. The app\'s user-friendly interface made it easy for me to book and explore my chosen destination. I can\'t wait to use it for my next adventure!"'
   },
   {
     id: 2,
-    src: '/images/avatar.svg',
+    src: '/images/avatar.webp',
     name: 'Марк',
     nick: 'Спикер',
     review: '"We love spontaneous getaways, and BookEase has become our go-to app. We booked an unforgettable island hopping trip to PalmIsle and had the time of our lives. The in-app travel itinerary and exclusive deals were the icing on the cake."'
   },
   {
     id: 3,
-    src: '/images/avatar.svg',
+    src: '/images/avatar.webp',
     name: 'София',
     nick: 'Путешественник',
     review: '"Traveling on a budget can be challenging, but BookEase made it possible for me to visit GoldenCove without breaking the bank. The app\'s exclusive offers allowed me to have a luxurious experience without overspending."'
   },
   {
     id: 4,
-    src: '/images/avatar.svg',
+    src: '/images/avatar.webp',
     name: 'Жанибек',
     nick: 'Летчик',
     review: '"Booking a family vacation can be overwhelming, but BookEase made it seamless. We discovered the family-friendly paradise at CrystalDunes, and our kids had a blast. The 24/7 customer support was a lifesaver when we had questions."'
   },
   {
     id: 5,
-    src: '/images/avatar.svg',
+    src: '/images/avatar.webp',
     name: 'Аслан',
     nick: 'IT-шник',
     review: '"As a digital nomad, I\'m always on the go. BookEase has been my travel companion, helping me find serene workation spots like MoonlightBay. I can stay productive while surrounded by nature\'s beauty."'

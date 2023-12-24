@@ -13,13 +13,13 @@
       >
         <div class="hidden lg:block">
           <NuxtImg
-            src="/images/logo.svg"
+            src="/images/logo.webp"
             height="56"
           />
         </div>
         <div class="block lg:hidden">
           <NuxtImg
-            src="/images/mobileLogo.svg"
+            src="/images/mobileLogo.webp"
             height="36"
           />
         </div>

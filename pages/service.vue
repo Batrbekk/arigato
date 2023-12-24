@@ -75,7 +75,7 @@
       <div class="w-full lg:w-1/2 lg:border-r border-t lg:border-t-0 border-customBlack">
         <NuxtImg
           class="w-full"
-          src="/images/graphic.svg"
+          src="/images/graphic.webp"
         />
       </div>
       <div class="w-full lg:w-1/2 flex flex-col gap-y-4">
@@ -129,7 +129,7 @@
       <div class="w-full lg:w-1/2 lg:border-l border-t lg:border-t-0 flex flex-col gap-y-4">
         <NuxtImg
           class="w-full"
-          src="/images/corp-price.svg"
+          src="/images/corp-price.webp"
         />
       </div>
     </div>
@@ -151,26 +151,26 @@ const router = useRoute();
 const days = [
   {
     id: 1,
-    src: '/images/graph-day/1.svg'
+    src: '/images/graph-day/1.webp'
   },
   {
     id: 2,
-    src: '/images/graph-day/2.svg'
+    src: '/images/graph-day/2.webp'
   },{
     id: 3,
-    src: '/images/graph-day/3.svg'
+    src: '/images/graph-day/3.webp'
   },{
     id: 4,
-    src: '/images/graph-day/4.svg'
+    src: '/images/graph-day/4.webp'
   },{
     id: 5,
-    src: '/images/graph-day/5.svg'
+    src: '/images/graph-day/5.webp'
   },{
     id: 6,
-    src: '/images/graph-day/6.svg'
+    src: '/images/graph-day/6.webp'
   },{
     id: 7,
-    src: '/images/graph-day/7.svg'
+    src: '/images/graph-day/7.webp'
   }
 ]
 

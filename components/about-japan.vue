@@ -2,7 +2,7 @@
   <div class="flex lg:flex-row flex-col items-center border border-customBlack lg:h-[650px]">
     <div class="lg:w-1/2 w-full lg:border-r lg:border-b-0 border-b border-customBlack flex flex-col justify-center items-center h-full gap-8 py-8 lg:py-0">
       <NuxtImg
-        src="/images/about_japan.svg"
+        src="/images/about_japan.webp"
         class="w-1/2"
       />
       <div class="flex flex-col gap-3 max-w-lg items-center p-4 lg:p-0">
