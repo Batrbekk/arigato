@@ -3,8 +3,9 @@
     <!--    <ui-headline />-->
     <ui-counters />
     <about-japan />
-    <about-us />
-    <ui-services />
+    <about-us id="about" />
+    <ui-services id="services" />
+    <ui-partners />
     <ui-reviews />
   </MainLayout>
 </template>

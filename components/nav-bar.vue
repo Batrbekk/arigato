@@ -78,11 +78,11 @@ const links = [
   },
   {
     label: 'Услуги',
-    to: '/services'
+    to: '/#services'
   },
   {
     label: 'О нас',
-    to: '/about'
+    to: '/#about'
   },
   {
     label: 'Контакты',
