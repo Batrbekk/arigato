@@ -29,8 +29,8 @@
           v-for="link in links"
           :key="link.to"
           :to="link.to"
-          class="font-mono text-lg px-6 border-l border-customBlack h-full flex items-center hover:text-lightYellow"
-          :class="link.to === '/contact' ? 'hover:bg-redJapan' : 'hover:bg-customBlack'"
+          class="font-mono text-lg px-6 border-l text-center border-customBlack h-full flex items-center justify-center hover:text-lightYellow w-[180px]"
+          :class="`${link.to === '/contact' ? 'hover:bg-redJapan' : 'hover:bg-customBlack'} ${link.to === '/contact' && 'bg-redJapan text-lightYellow'}`"
         >
           {{ link.label }}
         </NuxtLink>

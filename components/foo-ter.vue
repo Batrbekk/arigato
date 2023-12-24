@@ -43,10 +43,12 @@
           © Made by Batyrbek -  Powered by Nuxt3/tailwind/i18-n
         </p>
         <div class="text-lightYellow flex items-center gap-x-2">
-          <Icon
-            size="24"
-            name="mdi:instagram"
-          />
+          <NuxtLink href="https://www.instagram.com/arigato.travel/">
+            <Icon
+              size="24"
+              name="mdi:instagram"
+            />
+          </NuxtLink>
           <Icon
             size="24"
             name="mdi:twitter"
