@@ -3,14 +3,16 @@
     <!--    <ui-headline />-->
     <ui-counters />
     <about-japan />
+    <about-us />
     <ui-services />
     <ui-reviews />
   </MainLayout>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import MainLayout from "~/layout/mainLayout.vue";
 import UiCounters from "~/components/ui-counters.vue";
 import AboutJapan from "~/components/about-japan.vue";
 import UiServices from "~/components/ui-services.vue";
+import AboutUs from "~/components/about-us.vue";
 </script>

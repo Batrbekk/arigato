@@ -2,6 +2,7 @@
 declare module 'vue' {
   export interface GlobalComponents {
     'AboutJapan': typeof import("../components/about-japan.vue")['default']
+    'AboutUs': typeof import("../components/about-us.vue")['default']
     'AtomCounter': typeof import("../components/atom-counter.vue")['default']
     'ContactHeadline': typeof import("../components/contact-headline.vue")['default']
     'FooTer': typeof import("../components/foo-ter.vue")['default']
@@ -41,6 +42,7 @@ declare module 'vue' {
     'Html': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'LazyAboutJapan': typeof import("../components/about-japan.vue")['default']
+    'LazyAboutUs': typeof import("../components/about-us.vue")['default']
     'LazyAtomCounter': typeof import("../components/atom-counter.vue")['default']
     'LazyContactHeadline': typeof import("../components/contact-headline.vue")['default']
     'LazyFooTer': typeof import("../components/foo-ter.vue")['default']
@@ -83,6 +85,7 @@ declare module 'vue' {
 }
 
 export const AboutJapan: typeof import("../components/about-japan.vue")['default']
+export const AboutUs: typeof import("../components/about-us.vue")['default']
 export const AtomCounter: typeof import("../components/atom-counter.vue")['default']
 export const ContactHeadline: typeof import("../components/contact-headline.vue")['default']
 export const FooTer: typeof import("../components/foo-ter.vue")['default']
@@ -122,6 +125,7 @@ export const Head: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const LazyAboutJapan: typeof import("../components/about-japan.vue")['default']
+export const LazyAboutUs: typeof import("../components/about-us.vue")['default']
 export const LazyAtomCounter: typeof import("../components/atom-counter.vue")['default']
 export const LazyContactHeadline: typeof import("../components/contact-headline.vue")['default']
 export const LazyFooTer: typeof import("../components/foo-ter.vue")['default']

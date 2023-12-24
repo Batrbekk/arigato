@@ -92,10 +92,10 @@ const message = useState(() => '');
 async function  sendAmo () {
   console.log(name.value, mail.value, message.value);
   try {
-    const res = await $fetch('https://forms.amocrm.ru/queue/add', {
+    const res = await $fetch('https://arigatotravel.amocrm.ru/api/v4/leads', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
+        'Content-Type': 'application/json',
       },
       body: new URLSearchParams({
         'fields[name_1]': name.value,
