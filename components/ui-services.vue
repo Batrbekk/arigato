@@ -22,6 +22,16 @@
           <p class="text-customBlack text-center">
             {{ item.desc }}
           </p>
+          <NuxtLink
+            :href="`/service?type=${item.code}`"
+            class="text-redJapan font-semibold cursor-pointer flex items-center gap-x-1"
+          >
+            Подробнее
+            <Icon
+              size="18"
+              name="material-symbols:arrow-right-alt"
+            />
+          </NuxtLink>
         </div>
       </div>
     </div>
@@ -32,18 +42,21 @@
 const services = [
   {
     id: 1,
+    code: 'individual',
     icon: 'material-symbols:person-raised-hand',
     title: 'Индивидуальные туры',
     desc: 'Создайте свой уникальный маршрут с помощью наших экспертов. Идеально подходит для тех, кто ищет эксклюзивное путешествие.'
   },
   {
     id: 2,
+    code: 'corp',
     icon: 'ph:users-four-fill',
     title: 'Корпоративные туры',
     desc: 'Отличный способ укрепить корпоративный дух и поощрить сотрудников. Мы организуем все от тимбилдинга до деловых встреч.'
   },
   {
     id: 3,
+    code: 'group',
     icon: 'material-symbols:groups',
     title: 'Групповые туры',
     desc: 'Присоединяйтесь к группе единомышленников и исследуйте красоты Японии вместе. Это отличный способ познакомиться с новыми людьми.'
