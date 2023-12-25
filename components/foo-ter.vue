@@ -25,8 +25,11 @@
           </button>
         </div>
       </div>
-      <div class="lg:mt-24 flex justify-between flex-col lg:flex-row mt-8 items-center">
-        <NuxtImg src="/images/whiteLogo.webp" />
+      <div class="lg:mt-24 flex justify-between flex-col lg:flex-row mt-8 items-center lg:items-start">
+        <NuxtImg
+          src="/images/whiteLogo.webp"
+          :height="80"
+        />
         <div class="lg:w-1/2 flex flex-wrap gap-y-4 w-full p-4 mt-4 lg:p-0 lg:mt-0">
           <NuxtLink
             v-for="link in links"
