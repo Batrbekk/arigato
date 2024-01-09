@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col lg:flex-row items-center border-t-0 border border-customBlack md:px-0 lg:px-5 lg:h-64">
-    <div class="lg:w-1/2 w-full p-5 lg:p-0 border-b border-customBlack lg:border-0">
+    <div class="lg:w-1/2 w-full p-4 lg:p-0 border-b border-customBlack lg:border-0">
       <h1 class="uppercase text-customBlack text-3xl md:text-5xl font-semibold text-center lg:text-left">
         У ВАС ЕСТЬ ВОПРОСЫ?
         ДАВАЙТЕ ПОГОВОРИМ.

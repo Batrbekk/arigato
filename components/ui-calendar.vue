@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-col">
-    <div class="border-x border-b border-customBlack p-4">
+  <div class="flex flex-col border-x border-b border-customBlack">
+    <div class="border-b border-customBlack p-4">
       <h1 class="text-customBlack lg:text-5xl font-bold md:text-4xl text-3xl">
-        Отзывы
+        Календарь путешествий
       </h1>
     </div>
     <Carousel
@@ -10,34 +10,28 @@
       :items-to-show="itemsToShow"
       :wrap-around="true"
       :transition="800"
-      class="py-20 border-x border-customBlack"
+      class="lg:py-20 py-10"
     >
       <Slide
         v-for="slide in reviews"
         :key="slide.id"
         class="cursor-pointer"
       >
-        <div class="bg-lightYellow border flex flex-col items-center justify-center border-customBlack w-full px-10 md:w-[450px] ml-7 md:ml-0 h-[340px] md:px-12">
-          <div class="flex flex-col gap-y-6 items-start">
-            <div class="flex center gap-x-2">
-              <NuxtImg
-                :src="slide.src"
-                :width="48"
-                :height="48"
-              />
-              <div class="flex flex-col text-left items-start">
-                <p class="text-redJapan text-2xl font-semibold">
-                  {{ slide.name }}
-                </p>
-                <p class="text-lightBlack text-base">
-                  {{ slide.nick }}
-                </p>
-              </div>
-            </div>
-            <p class="text-lightBlack text-base text-left">
-              {{ slide.review }}
-            </p>
-          </div>
+        <div class="bg-lightYellow border flex flex-col items-center justify-center border-customBlack w-full px-10 md:w-[450px] mx-4 md:mx-0 h-[340px] md:px-12">
+          <div class="bg-gray h-[200px] w-full" />
+          <h3 class="text-customBlack text-2xl font-bold text-center mt-4">
+            3-10 марта
+          </h3>
+          <NuxtLink
+            href="#"
+            class="text-redJapan font-semibold cursor-pointer flex items-center gap-x-1 mt-2"
+          >
+            Подробнее
+            <Icon
+              size="18"
+              name="material-symbols:arrow-right-alt"
+            />
+          </NuxtLink>
         </div>
       </Slide>
     </Carousel>
@@ -45,7 +39,7 @@
 </template>
 
 <script lang="ts" setup>
-import { Carousel, Slide } from 'vue3-carousel'
+import {Carousel, Slide} from "vue3-carousel";
 
 const reviews = [
   {
@@ -121,4 +115,3 @@ const itemsToShow = computed(() => {
   opacity: 0.2;
 }
 </style>
-

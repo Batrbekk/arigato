@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col border border-customBlack">
-    <div class="border-b border-customBlack p-5">
+    <div class="border-b border-customBlack p-4">
       <h1 class="text-customBlack lg:text-5xl font-bold md:text-4xl text-3xl">
         Партнеры
       </h1>

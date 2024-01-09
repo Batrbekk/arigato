@@ -72,13 +72,9 @@
 
 <script lang="ts" setup>
 const links = [
-  // {
-  //   label: 'Агентам',
-  //   to: '/agents'
-  // },
   {
-    label: 'Услуги',
-    to: '/#services'
+    label: 'Календарь',
+    to: '/#calendar'
   },
   {
     label: 'О нас',

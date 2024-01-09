@@ -16,7 +16,7 @@
         />
       </div>
       <div class="px-2 md:px-0 lg:px-0 lg:-translate-y-[100px]">
-        <div class="lg:p-14 p-5 bg-snow shadow-lg max-w-[1100px] h-full mx-auto flex flex-col lg:flex-row md:items-center lg:items-start">
+        <div class="lg:p-14 p-4 bg-snow shadow-lg max-w-[1100px] h-full mx-auto flex flex-col lg:flex-row md:items-center lg:items-start">
           <div class="w-full lg:w-1/2 flex flex-col items-center lg:items-start">
             <p class="text-redJapan text-lg font-amiko">
               Напишите нам
@@ -36,24 +36,24 @@
             <input
               v-model="name"
               type="text"
-              class="bg-grayHard p-5 placeholder-[rgba_0_0_0_0.5] text-base"
+              class="bg-grayHard p-4 placeholder-[rgba_0_0_0_0.5] text-base"
               placeholder="Имя"
             >
             <input
               v-model="mail"
               type="text"
-              class="bg-grayHard p-5 placeholder-[rgba_0_0_0_0.5] text-base"
+              class="bg-grayHard p-4 placeholder-[rgba_0_0_0_0.5] text-base"
               placeholder="Почта"
             >
             <textarea
               v-model="message"
               type="text"
               rows="5"
-              class="bg-grayHard p-5 placeholder-[rgba_0_0_0_0.5] text-base resize-none"
+              class="bg-grayHard p-4 placeholder-[rgba_0_0_0_0.5] text-base resize-none"
               placeholder="Сообщение"
             />
             <button
-              class="bg-redJapan p-5 text-snow font-ubuntu text-base"
+              class="bg-redJapan p-4 text-snow font-ubuntu text-base"
               @click="sendAmo"
             >
               Отправить

@@ -80,16 +80,12 @@ const links = [
     to: '/'
   },
   {
-    label: 'Агентам',
-    to: '/agents'
-  },
-  {
-    label: 'Услуги',
-    to: '/services'
+    label: 'Календарь',
+    to: '/#calendar'
   },
   {
     label: 'О нас',
-    to: '/about'
+    to: '/#about'
   },
   {
     label: 'Контакты',
