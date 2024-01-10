@@ -2,19 +2,28 @@
   <MainLayout>
     <ui-counters />
     <ui-swiper />
-    <ui-services id="services" @handle-modal="handleModal" />
+    <ui-services
+      id="services"
+      @handle-modal="handleModal"
+    />
     <ui-calendar id="calendar" />
     <ui-emotion />
     <ui-slide-emotion />
     <about-us id="about" />
     <ui-reasons />
   </MainLayout>
-  <div v-if="isOpen" class="top-0 fixed w-screen h-screen z-50 bg-customBlack/[.54] flex items-center justify-center">
+  <div
+    v-if="isOpen"
+    class="top-0 fixed w-screen h-screen z-50 bg-customBlack/[.54] flex items-center justify-center"
+  >
     <div class="bg-lightYellow lg:w-6/12 relative">
-      <button class="absolute right-2 top-2" @click="handleModal">
+      <button
+        class="absolute right-2 top-2"
+        @click="handleModal"
+      >
         <Icon
-            size="18"
-            name="material-symbols:close"
+          size="18"
+          name="material-symbols:close"
         />
       </button>
       <div class="p-8">
@@ -34,26 +43,26 @@
         <div class="flex flex-col items-center gap-2">
           <div class="flex flex-col lg:flex-row items-center gap-2 w-full">
             <ui-input
-                label=""
-                classes="lg:w-full"
-                wrapper-class="w-full lg:max-w-full"
-                :model-value="name"
-                placeholder="Введите имя"
-                type="text"
-                @update:model-value="handleInputValueChange"
+              label=""
+              classes="lg:w-full"
+              wrapper-class="w-full lg:max-w-full"
+              :model-value="name"
+              placeholder="Введите имя"
+              type="text"
+              @update:model-value="handleInputValueChange"
             />
             <ui-input
-                label=""
-                classes="lg:w-full"
-                wrapper-class="w-full lg:max-w-full"
-                :model-value="phoneNumber"
-                placeholder="Введите номер телефона"
-                type="text"
-                @update:model-value="handleNumberValueChange"
+              label=""
+              classes="lg:w-full"
+              wrapper-class="w-full lg:max-w-full"
+              :model-value="phoneNumber"
+              placeholder="Введите номер телефона"
+              type="text"
+              @update:model-value="handleNumberValueChange"
             />
           </div>
           <button
-              class="bg-redJapan text-lightYellow font-mono text-lg p-4 w-full"
+            class="bg-redJapan text-lightYellow font-mono text-lg p-4 w-full"
           >
             Отправить
           </button>
