@@ -28,14 +28,14 @@
             />
           </NuxtLink>
           <NuxtLink
-              v-else
-              @click="$emit('handleModal')"
-              class="text-redJapan font-semibold cursor-pointer flex items-center gap-x-1"
+            v-else
+            class="text-redJapan font-semibold cursor-pointer flex items-center gap-x-1"
+            @click="$emit('handleModal')"
           >
             Подробнее
             <Icon
-                size="18"
-                name="material-symbols:arrow-right-alt"
+              size="18"
+              name="material-symbols:arrow-right-alt"
             />
           </NuxtLink>
         </div>
@@ -54,7 +54,7 @@ const services = [
   },
   {
     id: 2,
-    code: 'corp',
+    code: '/bisuness',
     icon: 'ph:users-four-fill',
     title: 'Бизнес - туры',
   },

@@ -10,6 +10,7 @@
         disableOnInteraction: true
       }"
       class="h-[300px] flex items-center justify-center"
+      :class="classes"
       :creative-effect="{
         prev: {
           shadow: false,
@@ -33,6 +34,12 @@
 </template>
 
 <script lang="ts" setup>
+const {classes} = defineProps({
+  classes: {
+    type: String,
+    default: ''
+  }
+});
 const slides = ref(Array.from({ length: 10 }, () => {
   const r = Math.floor(Math.random() * 256)
   const g = Math.floor(Math.random() * 256)
