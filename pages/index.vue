@@ -45,19 +45,20 @@
             <ui-input
               label=""
               classes="lg:w-full"
-              wrapper-class="w-full lg:max-w-full"
+              wrapper-class="w-full lg:!max-w-full"
               :model-value="name"
               placeholder="Введите имя"
               type="text"
               @update:model-value="handleInputValueChange"
             />
             <ui-input
+              maska="+7-(###)-###-##-##"
               label=""
               classes="lg:w-full"
-              wrapper-class="w-full lg:max-w-full"
+              wrapper-class="lg:w-full lg:!max-w-full"
               :model-value="phoneNumber"
               placeholder="Введите номер телефона"
-              type="text"
+              type="tel"
               @update:model-value="handleNumberValueChange"
             />
           </div>

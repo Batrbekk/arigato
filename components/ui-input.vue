@@ -5,6 +5,8 @@
   >
     <label for="input">{{ label }}</label>
     <input
+      v-maska
+      :data-maska="maska"
       :class="classes"
       class="placeholder-lightGray text-customBlack pl-4 py-4 font-mono text-lg lg:w-64 w-full"
       :value="modelValue"
@@ -16,7 +18,7 @@
 </template>
 
 <script lang="ts" setup>
-const {label, modelValue, placeholder, type, classes} = defineProps({
+const {label, modelValue, placeholder, type, classes, maska} = defineProps({
   label: {
     type: String,
     default: ''
@@ -38,6 +40,10 @@ const {label, modelValue, placeholder, type, classes} = defineProps({
     default: ''
   },
   wrapperClass: {
+    type: String,
+    default: ''
+  },
+  maska: {
     type: String,
     default: ''
   }
