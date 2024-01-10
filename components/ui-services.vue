@@ -17,13 +17,25 @@
             {{ item.title }}
           </h3>
           <NuxtLink
-            :href="`/service?type=${item.code}`"
+            v-if="item.id !== 3"
+            :href="`${item.code}`"
             class="text-redJapan font-semibold cursor-pointer flex items-center gap-x-1"
           >
             Подробнее
             <Icon
               size="18"
               name="material-symbols:arrow-right-alt"
+            />
+          </NuxtLink>
+          <NuxtLink
+              v-else
+              @click="$emit('handleModal')"
+              class="text-redJapan font-semibold cursor-pointer flex items-center gap-x-1"
+          >
+            Подробнее
+            <Icon
+                size="18"
+                name="material-symbols:arrow-right-alt"
             />
           </NuxtLink>
         </div>
@@ -36,7 +48,7 @@
 const services = [
   {
     id: 1,
-    code: 'individual',
+    code: '/#calendar',
     icon: 'material-symbols:person-raised-hand',
     title: 'Групповые путешествия',
   },
@@ -52,5 +64,5 @@ const services = [
     icon: 'material-symbols:groups',
     title: 'Индивидуальные приключения',
   }
-]
+];
 </script>
