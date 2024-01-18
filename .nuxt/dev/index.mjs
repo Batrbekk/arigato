@@ -73,7 +73,27 @@ const _inlineRuntimeConfig = {
           "domain": ""
         }
       }
+    },
+    "strapi": {
+      "url": "http://localhost:1337",
+      "prefix": "/api",
+      "admin": "/admin",
+      "version": "v4",
+      "cookie": {},
+      "auth": {},
+      "cookieName": "strapi_jwt",
+      "devtools": false
     }
+  },
+  "strapi": {
+    "url": "http://localhost:1337",
+    "prefix": "/api",
+    "admin": "/admin",
+    "version": "v4",
+    "cookie": {},
+    "auth": {},
+    "cookieName": "strapi_jwt",
+    "devtools": false
   },
   "ipx": {
     "baseURL": "/_ipx",

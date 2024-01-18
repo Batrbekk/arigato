@@ -90,8 +90,6 @@ const itemsToShow = computed(() => {
   if(process.client) {
     const windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
-    console.log(windowWidth);
-
     if (windowWidth > 728 && windowWidth < 1280) {
       return 2;
     } else  if (windowWidth > 1280) {

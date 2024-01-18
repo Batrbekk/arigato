@@ -7,12 +7,11 @@
     </div>
     <div class="flex items-start flex-col-reverse lg:flex-row">
       <div class="w-full lg:w-1/2">
-        <ui-swiper
+        <ui-bisuness-swiper
           class="!border-0"
-          classes=""
         />
       </div>
-      <div class="p-4 flex flex-col gap-y-2">
+      <div class="p-4 flex flex-col gap-y-2 lg:w-1/2">
         <p class="text-lg font-amiko text-redJapan">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
         </p>

@@ -5,6 +5,7 @@
 /// <reference types="nuxt-icon" />
 /// <reference types="vue3-carousel-nuxt" />
 /// <reference types="nuxt-swiper" />
+/// <reference types="@nuxtjs/strapi" />
 /// <reference types="@nuxt/devtools" />
 /// <reference types="@nuxt/telemetry" />
 /// <reference types="nuxt" />

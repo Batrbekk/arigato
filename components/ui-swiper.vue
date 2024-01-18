@@ -1,52 +1,97 @@
 <template>
   <div class="border-x border-b border-customBlack">
-    <Swiper
-      :modules="[SwiperAutoplay, SwiperEffectCreative]"
-      :slides-per-view="1"
-      :loop="true"
-      :effect="'creative'"
-      :autoplay="{
-        delay: 4000,
-        disableOnInteraction: true
-      }"
-      class="h-[300px] flex items-center justify-center"
-      :class="classes"
-      :creative-effect="{
-        prev: {
-          shadow: false,
-          translate: ['-20%', 0, -1]
-        },
-        next: {
-          translate: ['100%', 0, 0]
-        }
-      }"
+    <Carousel
+      :autoplay="3000"
+      :items-to-show="itemsToShow"
+      :wrap-around="true"
+      :transition="800"
+      class="py-4"
     >
-      <SwiperSlide
-        v-for="(slide, idx) in slides"
-        :key="idx"
-        class="flex items-center justify-center"
-        :style="`background-color: ${slide.bg}; color: ${slide.color}`"
+      <Slide
+        v-for="slide in reviews"
+        :key="slide.id"
+        class="cursor-pointer"
       >
-        {{ idx }}
-      </SwiperSlide>
-    </Swiper>
+        <div class="px-4">
+          <NuxtImg
+            :src="slide.src"
+          />
+        </div>
+      </Slide>
+    </Carousel>
   </div>
 </template>
 
 <script lang="ts" setup>
-const {classes} = defineProps({
-  classes: {
-    type: String,
-    default: ''
+import {Carousel, Slide} from "vue3-carousel";
+
+const reviews = [
+  {
+    id: 0,
+    src: '/images/swiper/1.png',
+  },
+  {
+    id: 1,
+    src: '/images/swiper/2.png',
+  },
+  {
+    id: 2,
+    src: '/images/swiper/3.png',
+  },
+  {
+    id: 3,
+    src: '/images/swiper/4.png',
+  },
+  {
+    id: 4,
+    src: '/images/swiper/5.png',
+  },
+  {
+    id: 5,
+    src: '/images/swiper/6.png',
+  },
+  {
+    id: 6,
+    src: '/images/swiper/8.png',
+  },
+  {
+    id: 7,
+    src: '/images/swiper/9.png',
+  },
+  {
+    id: 8,
+    src: '/images/swiper/10.png',
+  },
+  {
+    id: 9,
+    src: '/images/swiper/11.png',
+  }
+];
+
+const itemsToShow = computed(() => {
+  if(process.client) {
+    const windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+    if (windowWidth > 728 && windowWidth < 1280) {
+      return 2;
+    } else  if (windowWidth > 1280) {
+      return 3;
+    } else if (windowWidth > 0 && windowWidth < 728) {
+      return 1;
+    }
   }
 });
-const slides = ref(Array.from({ length: 10 }, () => {
-  const r = Math.floor(Math.random() * 256)
-  const g = Math.floor(Math.random() * 256)
-  const b = Math.floor(Math.random() * 256)
-  // Figure out contrast color for font
-  const contrast = r * 0.299 + g * 0.587 + b * 0.114 > 186 ? 'black' : 'white'
-
-  return { bg: `rgb(${r}, ${g}, ${b})`, color: contrast }
-}))
 </script>
+
+<style lang="scss">
+.carousel__slide--active {
+  opacity: 1!important;
+  transform: none!important;
+  box-shadow: none!important;
+}
+.carousel__slide {
+  box-shadow: rgba(5, 64, 72, 0.05) 0 1px 20px 0;
+  transform: rotateY(20deg) scale(0.9);
+  opacity: 0.2;
+}
+</style>

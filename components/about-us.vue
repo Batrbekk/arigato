@@ -14,17 +14,15 @@
           – ваш надежный проводник в удивительный мир Японии. Наша команда специализируется на организации запоминающихся туров в Страну восходящего солнца. Мы объединяем глубокие знания о Японии с индивидуальным подходом к каждому клиенту, чтобы сделать ваше путешествие незабываемым. С 2017 года на рынке
         </p>
       </div>
-      <div class="w-full lg:w-1/2 border-t lg:border-t-0 lg:border-l flex justify-center bg-[#f2f2f5]">
-        <video
-          muted
-          loop
-          autoplay
-          class="h-[400px]"
-          src="/video/about.mp4"
+      <div class="w-full lg:w-1/2 border-t lg:border-t-0 lg:border-l flex justify-center">
+        <NuxtImg
+          height="400"
+          src="/images/about.png"
         />
       </div>
     </div>
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+</script>
